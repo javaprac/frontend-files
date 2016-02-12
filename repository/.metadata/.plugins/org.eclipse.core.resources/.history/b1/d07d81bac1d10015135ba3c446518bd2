@@ -1,0 +1,28 @@
+package com.login.configuration;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import static com.login.initialization.InitializationConstants.BASE_PACKAGE;
+import static com.login.initialization.InitializationConstants.DB_JNDI;
+
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+
+@EnableWebMvc
+@Configuration
+@ComponentScan(BASE_PACKAGE)
+public class LoginRegistrationWebConfig {
+	public NamedParameterJdbcTemplate namedParameterJdbcTemplate() {
+		try {
+		InitialContext context;
+			context = new InitialContext();
+			DataSource dataSource = (DataSource) context.lookup(DB_JNDI);
+			NamedParameterJdbcTemplate template = new NamedParameterJdbcTemplate(dataSource);
+		} catch (NamingException e) {
+			
+		}
+	}
+}

@@ -1,0 +1,5 @@
+package com.login.initializer;
+
+public class LoginRegistrationInitializer {
+
+}

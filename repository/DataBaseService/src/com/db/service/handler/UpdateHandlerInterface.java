@@ -1,6 +1,6 @@
 package com.db.service.handler;
 
-public abstract class UpdateHandlerInterface {
+public interface UpdateHandlerInterface {
 
 	public abstract String getQuery();
 }

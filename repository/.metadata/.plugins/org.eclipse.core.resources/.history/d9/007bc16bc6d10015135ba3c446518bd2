@@ -1,0 +1,5 @@
+package com.login.constants;
+
+public final class Views {
+	public static final String LOAD_REG_CONTROLLER_SUCCESS = "registration";
+}

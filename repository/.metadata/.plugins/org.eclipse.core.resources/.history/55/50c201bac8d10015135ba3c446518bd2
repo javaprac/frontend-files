@@ -1,0 +1,9 @@
+package com.login.dao;
+
+import com.login.entities.UserDetails;
+import com.login.exception.LoginRegistrationException;
+
+public interface LoginRegistrationDAO {
+
+	public UserDetails registerUser(UserDetails userDetails) throws LoginRegistrationException;
+}

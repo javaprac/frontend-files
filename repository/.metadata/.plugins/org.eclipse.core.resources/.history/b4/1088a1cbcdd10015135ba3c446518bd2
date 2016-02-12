@@ -1,0 +1,5 @@
+package com.login.entities;
+
+public class ServiceStatus {
+
+}

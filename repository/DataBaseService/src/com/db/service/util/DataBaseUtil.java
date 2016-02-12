@@ -2,6 +2,7 @@ package com.db.service.util;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.db.service.exception.DataBaseServiceException;
@@ -13,18 +14,22 @@ public class DataBaseUtil {
 	public DataBaseUtil(Connection conn) {
 		this.conn = conn;
 	}
-	public Object executeQuery(QueryHandlerInterface<?> handler, Object obj) throws DataBaseServiceException {
+	@SuppressWarnings("rawtypes")
+	public Object executeQuery(QueryHandlerInterface handler, Object obj) throws DataBaseServiceException {
+		Object queryReturn = null;
 		try {
 			PreparedStatement st = conn.prepareStatement(handler.getQuery());
 			handler.prepareStatement(st, obj);
+			ResultSet rs = st.executeQuery();
+			queryReturn = handler.mapRow(rs);
 		} catch (SQLException e) {
 			throw new DataBaseServiceException(e);
 		} catch (Exception e) {
 			throw new DataBaseServiceException(e);
 		}
-		return null;
+		return queryReturn;
 	}
-	public int[] executeUpdate(UpdateHandlerInterface handler, Object obj){
+	public int[] executeUpdate(UpdateHandlerInterface handler, Object obj) throws DataBaseServiceException {
 		return null;
 	}
 }

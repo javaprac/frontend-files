@@ -1,0 +1,21 @@
+package com.login.handler;
+
+public class UserRegisterHandler {
+	public String getSQL(){
+		StringBuilder sb = new StringBuilder();
+		sb.append("insert into user_details values ");
+		sb.append("");
+		sb.append("");
+		sb.append("");
+		sb.append("");
+		sb.append("");
+		sb.append("");
+		sb.append("");
+		sb.append("");
+		sb.append("");
+		sb.append("");
+		sb.append("");
+		sb.append("");
+		return sb.toString();
+	}
+}

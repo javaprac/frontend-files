@@ -1,0 +1,14 @@
+package com.login.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import static com.login.constants.RequestMappings.LOAD_REG_CONTROLLER;
+
+@Controller
+public class LoadRegistrationController extends BaseController {
+	
+	@RequestMapping(LOAD_REG_CONTROLLER)
+	public String loadRegistrationController() {
+		return viewFinder(LOAD_REG_CONTROLLER);
+	}
+}

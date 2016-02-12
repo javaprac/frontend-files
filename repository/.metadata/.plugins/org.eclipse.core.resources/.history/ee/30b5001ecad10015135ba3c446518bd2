@@ -1,0 +1,28 @@
+package com.login.handler;
+
+public class UserRegisterHandler {
+	public String getSQL(){
+		StringBuilder sb = new StringBuilder();
+		sb.append("insert into user_details ");
+		sb.append("reg_id");        //1
+		sb.append("first_name");        //2
+		sb.append("middle_name");        //3
+		sb.append("last_name");        //4
+		sb.append("address_1");        //5
+		sb.append("address_2");        //6
+		sb.append("address_3");        //7
+		sb.append("address_4");        //8
+		sb.append("pin");        //9
+		sb.append("email");        //10
+		sb.append("home_phone");        //11
+		sb.append("work_phone");        //12
+		sb.append("");					//13
+		sb.append("");			//14
+		sb.append("");			//15
+		sb.append("");			//16
+		sb.append("");			//17
+		sb.append("");			//18
+		sb.append("");			//19
+		return sb.toString();
+	}
+}
