@@ -18,6 +18,7 @@ public class LoginRegistrationFreemarkerConfig {
 		
 		return viewResolver;
 	}
+	
 	@Bean
 	public FreeMarkerConfigurer freeMarkerConfigurer() {
 		FreeMarkerConfigurer configurer = new FreeMarkerConfigurer();
