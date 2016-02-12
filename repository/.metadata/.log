@@ -308,3 +308,6 @@ Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Failure to tra
 
 !ENTRY org.eclipse.wst.server.core 4 0 2016-02-13 03:06:33.522
 !MESSAGE Server Tomcat v7.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.equinox.security 1 0 2016-02-13 03:40:56.858
+!MESSAGE New keyring password generated. 
