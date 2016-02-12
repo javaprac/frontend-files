@@ -1,0 +1,36 @@
+package com.login.dao;
+
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+import org.springframework.stereotype.Repository;
+
+import com.login.entities.UserDetails;
+import com.login.entities.UserLoginInfo;
+import com.login.exception.LoginRegistrationException;
+import com.login.handler.UserRegisterHandler;
+
+@Repository
+public class LoginRegistrationDAOImpl implements LoginRegistrationDAO {
+	
+	@Autowired
+	private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
+	
+	@Override
+	public UserDetails registerUser(UserDetails userDetails) throws LoginRegistrationException {
+		UserRegisterHandler handler = new UserRegisterHandler();
+		Map<String, String> paramMap = handler.getParamMap();
+		String sql = handler.getSQL();
+		namedParameterJdbcTemplate.update(sql, paramMap);
+		return null;
+	}
+
+	@Override
+	public UserDetails authenticate(UserLoginInfo userLoginInfo) throws LoginRegistrationException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

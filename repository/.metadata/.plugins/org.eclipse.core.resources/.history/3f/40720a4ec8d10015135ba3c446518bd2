@@ -1,0 +1,5 @@
+package com.login.exception;
+
+public class LoginRegistrationException extends Exception {
+
+}

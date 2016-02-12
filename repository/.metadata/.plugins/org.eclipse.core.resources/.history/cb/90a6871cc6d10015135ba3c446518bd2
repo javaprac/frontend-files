@@ -1,0 +1,11 @@
+package com.login.constants;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public final class Views {
+	private static Map<String, String> viewMap;
+	static {
+		viewMap = new HashMap<String, String>();
+	}
+}

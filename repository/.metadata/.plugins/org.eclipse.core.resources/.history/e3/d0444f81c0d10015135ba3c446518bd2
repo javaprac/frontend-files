@@ -1,0 +1,5 @@
+package com.login.initialization;
+
+public class InitializationConstants {
+
+}

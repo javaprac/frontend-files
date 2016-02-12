@@ -1,0 +1,12 @@
+package com.login.controller;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class BaseController {
+	
+	public final String viewFinder(String result) {
+		
+	}
+	
+}

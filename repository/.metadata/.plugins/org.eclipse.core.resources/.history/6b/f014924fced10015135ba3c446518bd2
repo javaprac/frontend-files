@@ -1,0 +1,8 @@
+package com.login.constants;
+
+public final class LoginRegistrationConstants {
+	private LoginRegistrationConstants() {}
+	
+	public static final String SERVICE_STATUS_SUCCESS = "OK";
+	public static final String REG_STATUS_SUCCESS_DESC = "Successfully Registered.";
+}
