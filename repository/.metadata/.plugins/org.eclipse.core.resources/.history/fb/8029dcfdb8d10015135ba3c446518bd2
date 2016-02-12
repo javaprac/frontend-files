@@ -6,7 +6,6 @@ import java.sql.SQLException;
 
 import com.db.service.exception.DataBaseServiceException;
 import com.db.service.handler.QueryHandlerInterface;
-import com.db.service.handler.UpdateHandlerInterface;
 
 public class DataBaseUtil {
 	private Connection conn;
@@ -24,7 +23,7 @@ public class DataBaseUtil {
 		}
 		return null;
 	}
-	public int[] executeUpdate(UpdateHandlerInterface handler, Object obj){
+	public int[] executeUpdate(){
 		return null;
 	}
 }
