@@ -1,0 +1,8 @@
+package com.db.service.handler;
+
+import java.sql.ResultSet;
+
+public interface QueryHandlerInterface<T> {
+	public T mapRow(ResultSet rs);
+	public 
+}

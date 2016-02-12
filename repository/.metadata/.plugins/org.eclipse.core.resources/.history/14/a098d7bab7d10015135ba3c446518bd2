@@ -1,0 +1,18 @@
+package com.db.service.util;
+
+import java.sql.Connection;
+
+import com.db.service.handler.QueryHandlerInterface;
+
+public class DataBaseUtil {
+	private Connection conn;
+	public DataBaseUtil(Connection conn) {
+		this.conn = conn;
+	}
+	public Object executeQuery(QueryHandlerInterface<?> handler) {
+		return null;
+	}
+	public int[] executeUpdate(){
+		return null;
+	}
+}

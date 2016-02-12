@@ -1,0 +1,5 @@
+package com.db.service.handler;
+
+public interface QueryHandlerInterface<T> {
+
+}

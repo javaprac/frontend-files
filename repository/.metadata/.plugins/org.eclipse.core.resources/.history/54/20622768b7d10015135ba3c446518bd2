@@ -1,0 +1,6 @@
+package com.db.service.handler;
+
+public abstract class DataBaseServiceBaseHandler {
+
+	public abstract String getQuery();
+}
