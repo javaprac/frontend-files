@@ -1,7 +1,0 @@
-package com.login.constants;
-
-public final class RequestMappings {
-	private RequestMappings() {}
-	
-	
-}

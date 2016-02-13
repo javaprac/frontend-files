@@ -1,0 +1,18 @@
+package com.login.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.login.forms.RegistrationStepOneForm;
+
+@Controller
+public class RegistrationStepTwoController {
+	
+	@RequestMapping()
+	public String regStepTwo(RegistrationStepOneForm form, BindingResult bindingResult, HttpServletRequest request){
+		
+	}
+}

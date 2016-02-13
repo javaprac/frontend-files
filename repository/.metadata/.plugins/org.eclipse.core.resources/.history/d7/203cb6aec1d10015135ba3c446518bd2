@@ -1,7 +1,0 @@
-package com.login.initialization;
-
-public class WebAppInitializationException extends Exception {
-
-	private static final long serialVersionUID = 1L;
-
-}

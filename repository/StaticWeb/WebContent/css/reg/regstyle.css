@@ -1,0 +1,30 @@
+#regform {
+	border:1px solid black;
+	position:fixed;
+	height:150px;
+	width:320px;
+	top:10%;
+	left:30%;
+}
+.submit-form {
+	padding:10px;
+	border-radius:5px;
+	font-family: Arial;
+	font-size: 14px;
+}
+.field{
+	vertical-align: middle;
+	padding-left:32px;
+	padding-top:7px;
+}
+.label{
+	
+}
+input[type=submit]{
+	height: 30px;
+	width: 80px;
+	border:none;
+	color: blue;
+	background: #35b128;
+	border:1px solid #33842a;
+}

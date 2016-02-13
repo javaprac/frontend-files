@@ -1,5 +1,0 @@
-package com.login.entities;
-
-public class UserLoginInfo {
-
-}

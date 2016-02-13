@@ -1,7 +1,0 @@
-package com.login.initialization;
-
-public final class InitializationConstants {
-	private InitializationConstants() {}
-	
-	private static final String BASE_PACKAGE = "com.login";
-}

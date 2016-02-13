@@ -1,0 +1,12 @@
+package com.login.forms;
+
+import java.io.Serializable;
+
+public class RegistrationStepOneForm implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+}
