@@ -1,7 +1,0 @@
-package com.login.entities;
-
-import java.io.Serializable;
-
-public class ServiceStatus implements Serializable {
-
-}

@@ -1,5 +1,0 @@
-package com.login.handler;
-
-public abstract class BaseHandler {
-
-}

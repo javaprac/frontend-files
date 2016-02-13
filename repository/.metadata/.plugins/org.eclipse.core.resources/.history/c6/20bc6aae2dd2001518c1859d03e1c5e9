@@ -1,0 +1,21 @@
+#regform {
+	border:1px solid black;
+	position:fixed;
+	height:150px;
+	width:310px;
+	top:10%;
+	left:30%;
+}
+.submit-form {
+	padding:10px;
+	border-radius:5px;
+	font-family: Arial;
+	font-size: 14px;
+}
+.field{
+	vertical-align: middle;
+	padding-left:32px;
+}
+.label{
+	
+}
