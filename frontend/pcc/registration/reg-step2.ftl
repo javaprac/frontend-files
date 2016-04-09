@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" type="text/css" href="/static/css/reg/regstyle2.css">
+<link rel="stylesheet" type="text/css" href="/static/css/reg/regstyle-common.css">
 <title>Register user</title>
 <body>
-	User name : ${form.userName}
-	Email : ${form.email}
-	<div id="regform" class="submit-form">
+<#include "includes/header.inc">
+	<div id="regform" class="submit-form regform-common">
 		<form action="regstep3" method="post">
 			<table>
 				<tr>
@@ -60,6 +60,55 @@
 							<option value="S">Single</option>
 							<option value="M">Married</option>
 						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="label">
+						<label for="addressLine1">Address Line 1</label>
+					</td>
+					<td class="field">
+						<input type="text" name="addressLine1" id="addressLine1">
+					</td>
+					</td>
+				</tr>
+				<tr>
+					<td class="label">
+						<label for="addressLine2">Address Line 2</label>
+					</td>
+					<td class="field">
+						<input type="text" name="addressLine2" id="addressLine2">
+					</td>
+					</td>
+				</tr>
+				<tr>
+					<td class="label">
+						<label for="addressLine3">Address Line 3</label>
+					</td>
+					<td class="field">
+						<input type="text" name="addressLine3" id="addressLine3">
+					</td>
+					</td>
+				</tr>
+				<tr>
+					<td class="label">
+						<label for="addressLine1">Address Line 4</label>
+					</td>
+					<td class="field">
+						<input type="text" name="addressLine4" id="addressLine4">
+					</td>
+					</td>
+				</tr>
+				<tr>
+					<td class="label">
+						<label for="identity">Identity Document</label>
+					</td>
+					<td class="field">
+						<select name="identityType" id="identityType">
+							<option value="PAN">PAN</option>
+							<option value="PP">Passport</option>
+							<option value="PP">Voter ID</option>
+						</select>
+						<input type="text" name="identifier" id="identifier" id="identifier" maxlength="10" size="8">
 					</td>
 				</tr>
 				<tr>

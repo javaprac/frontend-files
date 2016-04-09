@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" type="text/css" href="/static/css/reg/regstyle.css">
+<link rel="stylesheet" type="text/css" href="/static/css/reg/regstyle-common.css">
 <title>Register user</title>
 <body>
-	<div id="regform" class="submit-form">
+	<#include "includes/header.inc">
+	<div id="regform" class="submit-form regform-common">
 		<form action="regstep2" method="post">
 			<table>
 				<tr>
