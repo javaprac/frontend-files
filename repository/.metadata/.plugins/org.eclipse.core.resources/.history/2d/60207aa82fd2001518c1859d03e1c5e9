@@ -1,7 +1,0 @@
-package com.login.forms;
-
-import java.io.Serializable;
-
-public class RegistrationStepOneForm implements Serializable {
-
-}

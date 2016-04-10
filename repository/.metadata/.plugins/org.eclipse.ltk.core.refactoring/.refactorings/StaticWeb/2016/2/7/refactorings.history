@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;regstyle.css&apos; to &apos;regstyle.css&apos;&#x0D;&#x0A;- Original project: &apos;StaticWeb&apos;&#x0D;&#x0A;- Destination element: &apos;regstyle.css&apos;&#x0D;&#x0A;- Original element: &apos;regstyle.css&apos;" description="Copy file" element1="WebContent/css/reg/regstyle.css" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1455356118049" target="/StaticWeb/WebContent/css/reg/regstyle.css" units="0" version="1.0"/>
-</session>
